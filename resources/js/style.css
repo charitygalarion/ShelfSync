@@ -1,0 +1,92 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-container, .dashboard {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+input, button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+button {
+  background-color: #a5c8ca;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #93b6b8;
+}
+
+.stats-grid {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.stats-card {
+  flex: 1;
+  background: #f0f7f7;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.book-card {
+  background: #f4f9f9;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tabs button {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #d3e9ea;
+}
+
+.tabs button.active {
+  background-color: #a5c8ca;
+  color: #fff;
+}
+
+.announcement {
+  background: #e8f4f4;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 25px;
+  text-align: center;
+}

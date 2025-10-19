@@ -1,26 +1,27 @@
 <?php
-// app/Models/Penalty.php
+// app/Models/BorrowedBook.php
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Penalty extends Model
+class BorrowedBook extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'user_id',
         'book_id',
-        'reason',
-        'amount',
-        'status',
-        'due_date'
+        'borrow_date',
+        'due_date',
+        'return_date',
+        'status'
     ];
 
     protected $casts = [
-        'amount' => 'decimal:2',
-        'due_date' => 'date'
+        'borrow_date' => 'date',
+        'due_date' => 'date',
+        'return_date' => 'date'
     ];
 
     public function user()
